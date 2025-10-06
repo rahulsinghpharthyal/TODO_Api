@@ -13,7 +13,7 @@ app.use(express.urlencoded({ extended: true }));
 // This is connected with frontend:-
 app.use(
   cors({
-    origin: [process.env.CLIENT_URI],
+    origin: [process.env.CLIENT_URI_01, process.env.CLIENT_URI_02],
     methods: ["GET", "POST", "PUT", "DELETE", "PATCH"],
     credentials: true,
   })
